@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<title>Type+Code 1</title>
+
+	<link rel="icon" type="image/x-icon" href="favicon-sun.png">
+
+
+	<!-- Display Font from Google -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<!-- Text Font from Google -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+
+
+<style>
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+ }
+
+
+ body{
+	background-image: url("background-gif.gif");
+ }
+
+ 
+.display {
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.slab-serif{
+  font-family: "Slabo 27px", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.main-header{
+	width: 70%;
+	margin:auto;
+	padding: 70px;
+	font-family: "Tourney", sans-serif;
+	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-size: 80px;
+  	color: yellow;
+  	text-align: center;
+	line-height: 120%;
+}
+
+@keyframes tourney-anim{
+	from{
+		font-variation-settings: "wght" 100, "wdth" 75;
+	}
+
+	to{
+		font-variation-settings: "wght" 900, "wdth" 125; 
+	}
+}
+
+.variable-anim{
+	font-family: "Tourney";
+	transition: font-variation-settings 0.5s ease;
+	animation-name: tourney-anim;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.parent{
+	display:grid;
+	height:300px;
+	grid-template-columns: repeat(3,1fr);
+	/* grid-template-rows:(3,1fr); */
+	gap:10px;
+	justify-content:center;
+	width: 70%;
+	margin:auto;
+	padding: 70px;
+	}
+		
+	
+.ver1{
+	grid-row:1;
+	grid-column:1;
+	background-color: yellow;
+	border:none;
+	border-radius: 20px;
+	transition-duration: 0.2s;
+	}
+		
+.ver1:hover{
+	background-color:#0C4CED; 
+	border:none;
+	border-radius: 60%;
+}	
+.ver2{
+	grid-row:2;
+	grid-column:2;
+	background-color: yellow;
+	border:none;
+	border-radius: 20px;
+	transition-duration: 0.2s;
+	}
+
+.ver2:hover{
+	background-color:#0C4CED; 
+	border:none;
+	border-radius: 60%;
+}	
+		
+.ver3{
+	grid-row:3;
+	grid-column:3;
+	background-color: yellow;
+	border:none;
+	border-radius: 20px;
+	transition-duration: 0.2s;
+	}
+
+.ver3:hover{
+	background-color:#0C4CED; 
+	border:none;
+	border-radius: 60%;
+}	
+
+body{
+	padding:0;
+	margin:0;
+	cursor: url("icons8-sun-16.png"), auto;
+	}
+
+a:link{
+	color: hotpink;
+	font-family: "Slabo 27px", serif;
+	font-weight: 600;
+	font-size: 18px;
+	margin:auto;
+    display: block;
+}
+
+a:visited{
+	color:hotpink;
+}
+a:hover{
+	color:yellow;
+}
+
+img{
+	width: 300px;
+	margin:auto;
+    display: block;
+	justify-content: center;
+}
+
+.other{
+	width: 250px;
+	margin: 0 auto;
+    display: block;
+	justify-content: center;
+	text-align: center;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<header class="main-header">
+	<div class="variable-anim">
+	Type + Code <br> Project 1
+</div>
+</header>
+
+<div> <img src="name.gif"> </div>
+
+	<div class="parent">
+		
+		<button class="ver1">
+			<a href="v1/index.html">Version 1</a>
+		</button>
+		
+		<button class="ver2">
+			<a href="v2/index.html">Version 2</a>
+		</button>
+		
+		<button class="ver3">
+			<a href="v3/index.html">Version 3</a>
+		</button>
+	</div>
+
+
+<div class="other">
+	<a href="https://www.smithsonianmag.com/history/brief-history-gif-early-internet-innovation-ubiquitous-relic-180963543/">Link to the original article</a></li>
+</div>
+
+</body>
+</html>
